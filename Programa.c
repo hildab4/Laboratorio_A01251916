@@ -7,17 +7,17 @@
 \pard\pardeftab720\partightenfactor0
 
 \f0\fs36 \cf0 \cb2 \expnd0\expndtw0\kerning0
-<!DOCTYPE HTML>\cb1 \
-\cb2 <html>\cb1 \
-\cb2 <head>\cb1 \
-\cb2 <title>Control de versiones</title>\cb1 \
-\cb2 <meta charset="UTF\cb1 \
-\cb2 -\cb1 \
-\cb2 8">\cb1 \
-\cb2 </head>\cb1 \
-\cb2 <body>\cb1 \
-\cb2 <main>\cb1 \
-\cb2 <h1>Laboratorio de Github</h1>\cb1 \
-\cb2 </main>\cb1 \
-\cb2 </body>\cb1 \
-\cb2 </html>}
+#include <stdio.h>\cb1 \
+\cb2 #include <stdlib.h>\cb1 \
+\cb2 #include <\cb1 \
+\cb2 math.h>\cb1 \
+\cb2 int main()\{\cb1 \
+\cb2 int length;\cb1 \
+\cb2 scanf("%i", &length);\cb1 \
+\cb2 int office = pow(2,length\cb1 \
+\cb2 );\cb1 \
+\cb2 printf("%\cb1 \
+\cb2 i\cb1 \
+\cb2 ",office);\cb1 \
+\cb2 return 0;\cb1 \
+\cb2 \}}
