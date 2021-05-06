@@ -1,6 +1,10 @@
 #Importar librerías
 import numpy as np
-import math 
+import math
+import cv2
+import matplotlib.pyplot as plt
+
+#Dimensiones de la matriz de la imagen 920x1900
 
 def padding (mat, rows, cols):
     #Convertir la lista de listas a matriz con numpy
@@ -18,11 +22,14 @@ def padding (mat, rows, cols):
             #Se suma m y n para ignorar ciertos renglones y columnas
             final[i + m][j + n] = mat[i, j]
     #Se imprime la matriz final
-    print(final)
+    plt.imshow(final, cmap='gray')
+    plt.title("Imagen con Padding")
+    plt.show()
     
-#Pedir la matriz original, y las dimensiones de la matriz solicitada
-mat = input('Matriz ')
+#Pedir la matriz original (imagen), y las dimensiones de la matriz solicitada
+imagen = input('Nombre archivo ')
+img = cv2.imread(imagen, cv2.IMREAD_GRAYSCALE)
 rows = int(input('Filas '))
 cols = int(input('Columnas '))
 #Llamar la función padding, mandando la matriz y las dimensiones 
-padding(mat, rows, cols)
+padding(img, rows, cols)
