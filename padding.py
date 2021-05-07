@@ -22,6 +22,7 @@ def padding (mat, rows, cols):
             #Se suma m y n para ignorar ciertos renglones y columnas
             final[i + m][j + n] = mat[i, j]
     #Se imprime la matriz final
+    print(final)
     plt.imshow(final, cmap='gray')
     plt.title("Imagen con Padding")
     plt.show()

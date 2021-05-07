@@ -4,7 +4,9 @@ import cv2
 import matplotlib.pyplot as plt
 
 #Nombre archivo = foto.jpg
-#Filtro = [[-1 0 1]; [-2 0 2]; [-1 0 1]]
+#Filtro = [[-1 0 1]; [-2 0 2]; [-1 0 1]] y edge
+#Filtro = [[-1 -2 -1]; [0 0 0]; [1 2 1]] x edge
+#Filtro = [[-1 -1 -1]; [-1 8 -1]; [-1 -1 -1]] edge
 
 def convolucion (img, kernel):
     #Convierte ambas entradas a matrices con ayuda de numpy
@@ -29,6 +31,7 @@ def convolucion (img, kernel):
             #Se le asigna el valor de cero a la variable, para repetir el proceso
             num1 = 0
     #Se imprime la matriz resultante
+    print(final)
     plt.imshow(final, cmap='gray')
     plt.title("Imagen usando Kernel")
     plt.show()
