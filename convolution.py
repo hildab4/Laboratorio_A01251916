@@ -28,7 +28,8 @@ def convolucion (img, kernel):
                                      j:j + (np.shape(kernel)[1])]), kernel)
             #Se coloca la suma de estos valores en la matriz resultante
             final[i][j] = num1.sum()
-            #Se le asigna el valor de cero a la variable, para repetir el proceso
+            #Se le asigna el valor de cero a la variable,
+            #para repetir el proceso
             num1 = 0
     #Se imprime la matriz resultante
     print(final)
